@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, user-scalable=no" />
+	<title>Hub</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="header-1">
+				<div class="main-logo-div">
+					<a class="ssl-logo" href="./index.html"><img src="./img/ssl_white.png" alt="ssl_white.png"></a>
+				</div>
+				<div class="main-links-div">
+					<a href="#" id="logout-link" class="hide"><i class="fa fa-sign-out-alt"></i>LOGOUT</a>
+					<a href="./signin.html" id="login-link"><i class="fa fa-sign-in-alt"></i>LOGIN</a>
+				</div>
+			</div>
+			<div class="header-2">
+				<a href="./vipgamelist.html"><i class="fa fa-crown"></i>VIP</a>
+				<a class="current" href="./lobbygamelist.html"><i class="fa fa-list-ul"></i>Game List</a>
+				<a href="./formrequest.html"><i class="fa fa-file-alt"></i>Request Forms</a>
+				<div class="link-dd">
+					<button type="button"><i class="fa fa-book-open"></i>E-Document<i class="fa fa-caret-down link-dd-i"></i></button>
+					<div class="link-dd-content">
+						<a href="./edocs/playtech/lobbyedoc.html">Playtech E-Document</a>
+						<a href="./edocs/skywind/lobbyedoc.html">Skywind E-Document</a>
+						<a href="./edocs/gamzo/lobbyedoc.html">Gamzo E-Document</a>
+					</div>
+				</div>
+				<div class="searchbar-div">
+					<div class="searchbar-input">
+						<i class="fa fa-search"></i>
+						<input id="searchbar" type="search" placeholder="search...">
+					</div>
+					<div class="search-dd">
+						<div id="search-list" class="dd-content">
+							<a id="result-1" href="#">Customreport Management</a>
+							<a id="result-2" href="#">Get All Reports</a>
+							<a id="result-3" href="#">Integrate Reports</a>
+							<a id="dd-all-result" class="dd-see-more" href="./searchhub.html">More Results</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+        <aside class="hub-sidenav">
+			<div class="filter-search-div">
+				<div class="filter-searchbar-input">
+					<i class="fa fa-search"></i>
+					<input id="filter-searchbar" type="search" placeholder="search game or code...">
+				</div>
+				<button type="button" class="filter-search-button">Search</button>
+			</div>
+			<ul class="hub-sideul">
+				<li id="filter-list-1"><div class="hub-sidenav-caret"><span>Genre</span><i class="fa fa-plus"></i></div>
+					<ul class="hub-sidenav-nested">
+						<li><div class="filter-checkbox-div"><label id="genre_filter_1" class="filter-checkbox">Card<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+						<li><div class="filter-checkbox-div"><label id="genre_filter_2" class="filter-checkbox">Poker<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+						<li><div class="filter-checkbox-div"><label id="genre_filter_3" class="filter-checkbox">Blackjack<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+						<li><div class="filter-checkbox-div"><label id="genre_filter_4" class="filter-checkbox">Baccarat<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+						<li><div class="filter-checkbox-div"><label id="genre_filter_5" class="filter-checkbox">Roulette<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+						<li><div class="filter-checkbox-div"><label id="genre_filter_6" class="filter-checkbox">Video Slots<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+					</ul>
+				</li>
+				<li id="filter-list-2"><div class="hub-sidenav-caret"><span>Live / Non-Live</span><i class="fa fa-plus"></i></div>
+					<ul class="hub-sidenav-nested">
+						<li><div class="filter-checkbox-div"><label id="live_filter_1" class="filter-checkbox">Live<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+						<li><div class="filter-checkbox-div"><label id="live_filter_2" class="filter-checkbox">Non-Live<input type="checkbox"><span class="filter-checkmark"></span></label></div></li>
+					</ul>
+				</li>
+			</ul>	
+		</aside>
+
+		<div class="hub-gamedetails-overlay">
+			<div class="hub-gamedetails-container">
+				<div class="hub-gamedetails-close-div">
+					<button type="button" onclick="closeGameDetails()" class="hub-gamedetails-close"><i class="fa fa-times"></i></button>
+				</div>
+				<div class="hub-gamedetails-content">
+					<div class="gamedetails-title-content">
+						<img id="details_gameimg" src="./img/game_samples/game_3.png" alt="">
+						<div class="gamedetails-title-info">
+							<h3 id="details_gamename">Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot (Jane Jones Special Edition)</h3>
+							<table>
+								<tr>
+									<th width="50px">Group:</th>
+									<td id="details_group">Roulette Games</td>
+								</tr>
+								<tr>
+									<th>Type:</th>
+									<td id="details_type">Table Games</td>
+								</tr>
+							</table>
+						</div>
+						<div id="details_platforms" class="gamedetails-title-platforms">
+							<img src="./img/html5_icon.svg" alt="html5_icon.svg">
+							<img src="./img/flash_icon.svg" alt="flash_icon.svg">
+						</div>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Bonus:</th>
+								<td id="details_bonus">NO</td>
+							</tr>
+							<tr>
+								<th>Free Games:</th>
+								<td id="details_freegames">YES</td>
+							</tr>
+							<tr>
+								<th>Cluster Bet Record:</th>
+								<td id="details_cbetrecord">NO</td>
+							</tr>
+							<tr>
+								<th>Branded:</th>
+								<td id="details_branded">YES</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Promotional:</th>
+								<th width="200">Manual Free Spin:</th>
+								<td id="details_manualfreespin">YES</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Golden Chips:</th>
+								<td id="details_goldenchips">NO</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Progressive:</th>
+								<th width="200">Supportive:</th>
+								<td id="details_supportive">YES</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Game Code:</th>
+								<td id="details_gamecode">Skywind — gpas_bokings2pp_pop</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Seed Amount:</th>
+								<td id="details_seedamount">TBD</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Contribution %:</th>
+								<td id="details_contribution">1.05%</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Game Reels:</th>
+								<td id="details_gamereels">5</td>
+							</tr>
+							<tr>
+								<th>Game Lines:</th>
+								<td id="details_gamelines">324/117649</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">RTP:</th>
+								<td id="details_rtp">97.22%; Main Bets 1: 95.34-95.34%; Main Bets 2: 95.51-95.51%; Main Bets 5: 91.22-91.24%; Main Bets 10: 96.55-96.58%; Main Bets 20: 92.67-92.74%; Main Bets 40: 90.67-90.81%; Side Bets: Odd: 97.22-97.22%; Even:  91.67-91.67%; Multiple: 96.30-96.30%</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Seed Amount:</th>
+								<th width="200">Type:</th>
+								<td id="details_seedtype">ashbob</td>
+							</tr>
+							<tr>
+								<th></th>
+								<th>Seed:</th>
+								<td id="details_seed">&#8364;20,000.00</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper-content-sidenav">
+			<div class="content">
+				<div class="content-title">
+					<h5>/ Provider / Game List</h5>
+					<h1>Game List</h1>
+					<button type="button" class="hub-viewbtn" onclick="toggleGridList()"><i id="gridlist-ico" class="fa fa-list"></i></button>
+				</div>
+				<hr>
+				<br>
+				<div class="hub-gamelist-div">
+					<div class="hub-gamelist-content grid">
+						<div id="game_1" class="hub-game-div grid">
+							<div class="game-div-title">
+								<img src="./img/game_samples/game_1.png">
+								<div>
+									<h6 id="game_code_1">Skywind — gpas_bokings2pp_pop</h6>
+									<span id="game_name_1">Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot (Jane Jones Special Edition)</span>
+								</div>
+							</div>
+							<div class="game-div-info">
+								<div id="game_platforms_1" class="game-platforms">
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Html5</div>
+										<img src="./img/html5_icon.svg"></img>
+									</div>
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Flash</div>
+										<img src="./img/flash_icon.svg"></img>
+									</div>
+								</div>
+								<div class="game-rtp">
+									<div class="game-rtp-popup">
+										<div class="game-rtp-popup-content">
+											<div id="game_rtp_1">
+												97.22%; Main Bets 1: 95.34-95.34%; Main Bets 2: 95.51-95.51%; Main Bets 5: 91.22-91.24%; Main Bets 10: 96.55-96.58%; Main Bets 20: 92.67-92.74%; Main Bets 40: 90.67-90.81%; Side Bets: Odd: 97.22-97.22%; Even:  91.67-91.67%; Multiple: 96.30-96.30%
+											</div>
+										</div>
+										<span>RTP</span>
+									</div>
+								</div>
+								<div class="game-actions">
+									<div class="game-actions-popup">
+										<button type="button"><i class="fa fa-ellipsis-h"></i></button>
+										<div class="game-actions-popup-content">
+											<a id="game_id_1" onclick="clickedGameDetails(this.id)">Details</a>
+											<a href="#">Demo</a>
+										</div>
+									</div>
+									<button type="button"><i class="fa fa-download"></i></button>
+								</div>
+							</div>
+						</div>
+						<div id="game_2" class="hub-game-div grid">
+							<div class="game-div-title">
+								<img src="./img/game_samples/game_2.png">
+								<div>
+									<h6 id="game_code_2">Skywind — gpas_bokings2pp_pop</h6>
+									<span id="game_name_2">Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot (Jane Jones Special Edition)</span>
+								</div>
+							</div>
+							<div class="game-div-info">
+								<div id="game_platforms_2" class="game-platforms">
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Html5</div>
+										<img src="./img/html5_icon.svg"></img>
+									</div>
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Flash</div>
+										<img src="./img/flash_icon.svg"></img>
+									</div>
+								</div>
+								<div class="game-rtp">
+									<div class="game-rtp-popup">
+										<div class="game-rtp-popup-content">
+											<div id="game_rtp_2">
+												94.91%(No Payment Boosts unlocked); 96.98%(Payment Boosts have been unlocked)
+											</div>
+										</div>
+										<span>RTP</span>
+									</div>
+								</div>
+								<div class="game-actions">
+									<div class="game-actions-popup">
+										<button type="button"><i class="fa fa-ellipsis-h"></i></button>
+										<div class="game-actions-popup-content">
+											<a id="game_id_2" onclick="clickedGameDetails(this.id)">Details</a>
+											<a href="#">Demo</a>
+										</div>
+									</div>
+									<button type="button"><i class="fa fa-download"></i></button>
+								</div>
+							</div>
+						</div>
+						<div id="game_3" class="hub-game-div grid">
+							<div class="game-div-title">
+								<img src="./img/game_samples/game_3.png">
+								<div>
+									<h6 id="game_code_3">Skywind — gpas_bokings2pp_pop</h6>
+									<span id="game_name_3">Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot (Jane Jones Special Edition)</span>
+								</div>
+							</div>
+							<div class="game-div-info">
+								<div id="game_platforms_3" class="game-platforms">
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Html5</div>
+										<img src="./img/html5_icon.svg"></img>
+									</div>
+								</div>
+								<div class="game-rtp">
+									<div class="game-rtp-popup">
+										<div class="game-rtp-popup-content">
+											<div id="game_rtp_3">
+												The theoretical percentage return to player (RTP) in th: game has five different values: 93.50%; 94.50%; 95.51%; 96.51% and 97.51%. It starts from 93.50% and increases up with 1% for every consecutive day the game : played by the same player. If a day : m:sed the RTP value drops back to 93.50%.											</div>
+											</div>
+										<span>RTP</span>
+									</div>
+								</div>
+								<div class="game-actions">
+									<div class="game-actions-popup">
+										<button type="button"><i class="fa fa-ellipsis-h"></i></button>
+										<div class="game-actions-popup-content">
+											<a id="game_id_3" onclick="clickedGameDetails(this.id)">Details</a>
+											<a href="#">Demo</a>
+										</div>
+									</div>
+									<button type="button"><i class="fa fa-download"></i></button>
+								</div>
+							</div>
+						</div>
+						<div id="game_4" class="hub-game-div grid">
+							<div class="game-div-title">
+								<img src="./img/game_samples/game_4.png">
+								<div>
+									<h6 id="game_code_4">Skywind — gpas_bokings2pp_pop</h6>
+									<span id="game_name_4">Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot (Jane Jones Special Edition)</span>
+								</div>
+							</div>
+							<div class="game-div-info">
+								<div id="game_platforms_4" class="game-platforms">
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Flash</div>
+										<img src="./img/flash_icon.svg"></img>
+									</div>
+								</div>
+								<div class="game-rtp">
+									<div class="game-rtp-popup">
+										<div class="game-rtp-popup-content">
+											<div id="game_rtp_4">
+												96.12-96.14%
+											</div>
+										</div>
+										<span>RTP</span>
+									</div>
+								</div>
+								<div class="game-actions">
+									<div class="game-actions-popup">
+										<button type="button"><i class="fa fa-ellipsis-h"></i></button>
+										<div class="game-actions-popup-content">
+											<a id="game_id_4" onclick="clickedGameDetails(this.id)">Details</a>
+											<a href="#">Demo</a>
+										</div>
+									</div>
+									<button type="button"><i class="fa fa-download"></i></button>
+								</div>
+							</div>
+						</div>
+						<div id="game_5" class="hub-game-div grid">
+							<div class="game-div-title">
+								<img src="./img/game_samples/game_5.png">
+								<div>
+									<h6 id="game_code_5">Skywind — gpas_bokings2pp_pop</h6>
+									<span id="game_name_5">Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot (Jane Jones Special Edition)</span>
+								</div>
+							</div>
+							<div class="game-div-info">
+								<div id="game_platforms_5" class="game-platforms">
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Html5</div>
+										<img src="./img/html5_icon.svg"></img>
+									</div>
+									<div class="game-platforms-popup">
+										<div class="game-platforms-popup-content">Flash</div>
+										<img src="./img/flash_icon.svg"></img>
+									</div>
+								</div>
+								<div class="game-rtp">
+									<div class="game-rtp-popup">
+										<div class="game-rtp-popup-content">
+											<div id="game_rtp_5">
+												Banker : 98.94%; Player : 98.76%; Tie : 85.64%; Player Pair/ Banker Pair : 89.64%; Perfert Pair : 86.97%; Either Pair : 86.29%; Big : 95.65%; Small : 94.72%
+											</div>
+										</div>
+										<span>RTP</span>
+									</div>
+								</div>
+								<div class="game-actions">
+									<div class="game-actions-popup">
+										<button type="button"><i class="fa fa-ellipsis-h"></i></button>
+										<div class="game-actions-popup-content">
+											<a id="game_id_5" onclick="clickedGameDetails(this.id)">Details</a>
+											<a href="#">Demo</a>
+										</div>
+									</div>
+									<button type="button"><i class="fa fa-download"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/index.js"></script>
+</body>
+</html>

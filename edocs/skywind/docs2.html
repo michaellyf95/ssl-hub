@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Skywind E-Doc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, user-scalable=no" />
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="../../css/all.min.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+        <header>
+			<div class="header-1">
+				<div class="main-logo-div">
+					<a class="ssl-logo" href="../../index.html"><img src="../../img/ssl_white.png" alt="ssl_white.png"></a>
+				</div>
+				<div class="main-links-div">
+					<a href="#" id="logout-link" class="hide"><i class="fa fa-sign-out-alt"></i>LOGOUT</a>
+					<a href="../../signin.html" id="login-link"><i class="fa fa-sign-in-alt"></i>LOGIN</a>
+				</div>
+			</div>
+			<div class="header-2">
+				<a href="../../vipgamelist.html"><i class="fa fa-crown"></i>VIP</a>
+				<a href="../../lobbygamelist.html"><i class="fa fa-list-ul"></i>Game List</a>
+				<a href="../../formrequest.html"><i class="fa fa-file-alt"></i>Request Forms</a>
+				<div class="link-dd">
+					<button type="button" class="current"><i class="fa fa-book-open"></i>E-Document<i class="fa fa-caret-down link-dd-i"></i></button>
+					<div class="link-dd-content">
+						<a href="../playtech/lobbyedoc.html">Playtech E-Document</a>
+						<a class="dd-current" href="../skywind/lobbyedoc.html">Skywind E-Document</a>
+						<a href="../gamzo/lobbyedoc.html">Gamzo E-Document</a>
+					</div>
+				</div>
+				<div class="searchbar-div">
+					<div class="searchbar-input">
+						<i class="fa fa-search"></i>
+						<input id="searchbar" type="search" placeholder="search...">
+					</div>
+					<div class="search-dd">
+						<div id="search-list" class="dd-content">
+							<a id="result-1" href="#">Customreport Management</a>
+							<a id="result-2" href="#">Get All Reports</a>
+							<a id="result-3" href="#">Integrate Reports</a>
+							<a id="dd-all-result" class="dd-see-more" href="../../searchhub.html">More Results</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+        <aside class="edoc-sidenav">
+			<div class="edoc-sideico-div">
+				<div class="edoc-sideico">
+					<img src="./img/skywind_logo.svg">
+					<i class="fa fa-arrow-right"></i>
+				</div>
+			</div>
+			<div class="edoc-sideul-div">
+				<ul class="edoc-sideul">
+					<li id="side-list-1"><div class="edoc-sidenav-caret"><span>Admin Management</span><i class="fa fa-exclamation-circle"></i></div>
+						<ul class="edoc-sidenav-nested">
+							<li id="side-list-1-1"><div class="edoc-sidenav-subcaret"><span>Create Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>		
+							<li id="side-list-1-2"><div class="edoc-sidenav-subcaret"><span>Delete Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-3"><div class="edoc-sidenav-subcaret"><span>Edit Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-4"><div class="edoc-sidenav-subcaret"><span>Blacklist Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-5"><div class="edoc-sidenav-subcaret"><span>Get Admin Info</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-6"><div class="edoc-sidenav-subcaret"><span>Get All Admins</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>		 
+						</ul>
+					</li> 
+					<li id="side-list-2"><div class="edoc-sidenav-caret"><span>Player Management</span></div>
+						<ul class="edoc-sidenav-nested">
+							<li id="side-list-2-1"><div class="edoc-sidenav-subcaret"><span>Get Player Info</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-2"><div class="edoc-sidenav-subcaret"><span>Get All Players</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-3"><div class="edoc-sidenav-subcaret"><span>Delete Player</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-4"><div class="edoc-sidenav-subcaret"><span>Blacklist Player</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			 
+							<li id="side-list-2-5"><div class="edoc-sidenav-subcaret"><span>Edit Player Info</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-6"><div class="edoc-sidenav-subcaret"><span>Create Player</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>					
+						</ul>
+					</li> 
+				</ul>	
+			</div>
+		</aside>
+
+        <div class="btt-btn">
+			<a href="#top"><img src="./img/skywind_icon.svg"></a>
+		</div>
+
+		<div class="wrapper-content-sidenavhover">
+			<div class="content">
+				<div class="content-title">
+					<h5>/ Player Management / Get Player Info</h5>
+					<h1>Get Player Info <span class="methods">POST</span> <span>- [V1.16] - 12/12/2021</span></h1>		
+					<button type="button" class="edoc-printbtn" onclick="printDiv()"><i class="fa fa-print"></i></button>
+				</div>
+				<hr>
+				<div>
+					<section id="overview">
+						<h2>Overview</h2>
+						<h3>Description</h3>
+						<p>To get the information of the specific <mark>player username</mark>.</p>
+						<hr>
+						<h3>URI</h3>
+						<p>baseURI/player/info/</p>
+					</section>
+					<hr>
+					<section id="integration">
+						<h2>Integration</h2>
+					<h3>Input Post Params</h3>
+					<table class="edoc-table">
+						<tr>
+							<th width="120">Parameter name</th>
+							<th width="40">Type</th>
+							<th width="150">Comments</th>
+							<th width="80">Mandatory</th>
+							<th width="50">Value</th>
+							<th width="80">Minlength</th>
+							<th width="80">Maxlength</th>
+							<th width="80">REGEX</th>
+						</tr>
+						<tr>
+							<td>playername</td>
+							<td>string</td>
+							<td>Player's username</td>
+							<td>1</td>
+							<td>RTM100315</td>
+							<td>2</td>
+							<td>32</td>
+							<td>/[A-Za-z0-9.\\/,_-&#]+/</td>
+						</tr>
+						<tr>
+							<td>with3RDPData</td>
+							<td>integer</td>
+							<td>Show 3RDP container data</td>
+							<td>0</td>
+							<td>0|1</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^0|1$/</td>
+						</tr>					
+					</table>
+					<hr>
+					<h3>Response Type</h3>
+					<p>application/json</p>
+					<hr>
+					<h3>Success Response</h3>
+					<table class="edoc-table">
+						<tr>
+							<th>Field</th>
+							<th>Type</th>
+							<th>Value</th>
+							<th>Description</th>
+							<th>Mandatory</th>
+						</tr>
+						<tr>
+							<td>result</td>
+							<td>array</td>
+							<td>—</td>
+							<td>The list of fields of the response, see the table below.</td>
+							<td>1</td>
+						</tr>
+						<tr>
+                            <td colspan="5">
+                                <table class="edoc-table" style="margin:0px; width:100%;">
+                                    <tr>
+                                        <th>Field</th>
+                                        <th>Type</th>
+                                        <th>Value</th>
+                                        <th>Description</th>
+                                        <th>Mandatory</th>
+                                    </tr>
+                                    <tr>
+                                        <td>CASINONAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Casino name</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PLAYERNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Username</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ADDRESS</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Address</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BIRTHDATE</td>
+                                        <td>date</td>
+                                        <td>—</td>
+                                        <td>Birthdate</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CITY</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>City</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>COUNTRYCODE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Country code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CURRENCY</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Currency</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EMAIL</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Email</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FAX</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Fax</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FIRSTNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>First name</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LASTNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Last name</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NOBONUS</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>No bonus</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>OCCUPATION</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Occupation</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PHONE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Phone number</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WORKPHONE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Work phone number</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CELLPHONE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Cell phone number</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SEX</td>
+                                        <td>string</td>
+                                        <td>M|F</td>
+                                        <td>Sex</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>STATE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>State</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VIPLEVEL</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>VIP level</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WANTMAIL</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Want mail</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ZIP</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Zip code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ADVERTISER</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Advertiser</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BANNERID</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Banner ID</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CLIENTTYPE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Client type</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CREFERER</td>
+                                        <td>array</td>
+                                        <td>—</td>
+                                        <td>Creferer</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRACKINGID</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>TrackingID</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LANGUAGECODE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Language code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SERIAL</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Serial number</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SIGNUPDATE</td>
+                                        <td>date</td>
+                                        <td>—</td>
+                                        <td>Date of sign up</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LASTLOGINDATE</td>
+                                        <td>date</td>
+                                        <td>—</td>
+                                        <td>Last login date</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PASSWORD</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Player password</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FROZEN</td>
+                                        <td>integer</td>
+                                        <td>0|1</td>
+                                        <td>Frozen</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CLIENTSKIN</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Client skin</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SIGNUPCLIENTPLATFORM</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Sign up client platform</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>INTERNAL</td>
+                                        <td>integer</td>
+                                        <td>0|1</td>
+                                        <td>Is internal player</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SUSPENDED</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Suspended</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FULLFIRSTNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Full First name</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FULLFIRSTSURNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Full First surname</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FULLSECONDSURNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Full Second surname</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TAXRESIDENCEREGION</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Tax residence region</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CODE</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Player code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BALANCE</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Player balance</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MAXBALANCE</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Max player balance</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RESERVEDBALANCE</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Reserved player balance</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CURRENTBET</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Current bet</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CURRENTBONUSBET</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Current bonus bet</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PENDINGBONUSBALANCE</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Pending bonus balance</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BONUSBALANCE</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Bonus player balance</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LASTWITHDRAWALDATE</td>
+                                        <td>date</td>
+                                        <td>—</td>
+                                        <td>Last withdrawal date</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LASTDEPOSITDATE</td>
+                                        <td>date</td>
+                                        <td>—</td>
+                                        <td>Last deposit date</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTALDEPOSITS</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Total deposits amount</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTALWITHDRAWALS</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Total withdrawals amount</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>COMPPOINTS</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Player comp points</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTALCOMPPOINTS</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Total player comp points</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>KIOSKCODE</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Kiosk code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>KIOSKADMINCODE</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Kiosk admin code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CASINOCODE</td>
+                                        <td>integer</td>
+                                        <td>—</td>
+                                        <td>Casino code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LOCKEDMINUTES</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Player locked minutes</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CURRENCYCODE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Currency code</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CASINONICKNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Casino nickname</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NETWORKNICKNAMES</td>
+                                        <td>array</td>
+                                        <td>—</td>
+                                        <td>The list of fields of the response, see the table below.</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <table class="edoc-table" style="margin:0px; width:100%;">
+                                                <tr>
+                                                    <th>Field</th>
+                                                    <th>Type</th>
+                                                    <th>Value</th>
+                                                    <th>Description</th>
+                                                    <th>Mandatory</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>networkId</td>
+                                                    <td>integer</td>
+                                                    <td>—</td>
+                                                    <td>Network ID</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>networkData</td>
+                                                    <td>array</td>
+                                                    <td>—</td>
+                                                    <td>The list of fields of the response, see the table below.</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <table class="edoc-table" style="margin:0px; width:100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Field</th>
+                                                                    <th>Type</th>
+                                                                    <th>Value</th>
+                                                                    <th>Description</th>
+                                                                    <th>Mandatory</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>key</td>
+                                                                    <td>integer</td>
+                                                                    <td>—</td>
+                                                                    <td>Key network data</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>values</td>
+                                                                    <td>string</td>
+                                                                    <td>—</td>
+                                                                    <td>Value network data</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISINGAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Is in game</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ENTITYNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Entity name</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>KIOSKADMINNAME</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Kiosk admin name</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RC_BALANCE</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>Unpaid amount of rolling commission</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TITLE</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Players title</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>COMMENTS</td>
+                                        <td>string</td>
+                                        <td>—</td>
+                                        <td>Player comments</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NETLOSS</td>
+                                        <td>float</td>
+                                        <td>—</td>
+                                        <td>total netloss</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3RDPData</td>
+                                        <td>array</td>
+                                        <td>—</td>
+                                        <td>The list of fields of the response, see the table below.</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <table class="edoc-table" style="margin:0px; width:100%;">
+                                                <tr>
+                                                    <th>Field</th>
+                                                    <th>Type</th>
+                                                    <th>Value</th>
+                                                    <th>Description</th>
+                                                    <th>Mandatory</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom01</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom02</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom03</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom04</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom05</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom06</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom07</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom08</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom09</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom10</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom11</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom12</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom13</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom14</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom15</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom16</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom17</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom18</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom19</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom20</td>
+                                                    <td>string</td>
+                                                    <td>—</td>
+                                                    <td>Custom field value</td>
+                                                    <td>0</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+					</table>
+					<hr>
+					<h3>Example</h3>
+					<p><mark>Request: </mark><br>baseURI/player/info/playername/RTM100315</p>
+					<p><mark>Response: </mark><br>{"result": {"ADDRESS":"NA","ADVERTISER":"default65","BALANCE":"9","BANNERID":"-","BIRTHDATE":"1950-01-01","BONUSBALANCE":"0","CASINONAME":"playtech800045","CASINONICKNAME":"tes1003","CELLPHONE":"112","CITY":"NA","CLIENTSKIN":"playtech800045","CLIENTTYPE":"casino","CODE":"13199545","COMMENTS":"112","COMPPOINTS":"0","COUNTRYCODE":"IT","CREFERER":[],"CURRENCY":"USD","CURRENCYCODE":"USD","CURRENTBET":"0","CURRENTBONUSBET":"0","EMAIL":"test@ya.ru","FAX":"11111","FIRSTNAME":"NA","FROZEN":"0","INTERNAL":"0","ISINGAME":false,"KIOSKADMINNAME":"RTA1","ENTITYNAME":"RTE1K","LANGUAGECODE":"ES","LASTDEPOSITDATE":"2015-06-14 14:09:23","LASTLOGINDATE":"2015-03-10 17:28:32","LASTNAME":"NA","LASTWITHDRAWALDATE":null,"LOCKEDMINUTES":0,"MAXBALANCE":"9","NETLOSS":"0","NETWORKNICKNAMES":[],"NOBONUS":"0","OCCUPATION":null,"PASSWORD":"DC69D8AA9B2E83889EDE8C514715FE66A94AA6F5","PENDINGBONUSBALANCE":"0","PHONE":"11111","PLAYERNAME":"RTM100315","RC_BALANCE":0,"REMOTEIP":"172.18.0.1","RESERVEDBALANCE":"0","SERIAL":"65W20CARDUSER3681931","SEX":"M","SIGNUPCLIENTPLATFORM":"download","SIGNUPDATE":"2015-03-10 17:12:11","STATE":"NA","SUSPENDED":1,"TITLE":"112","TOTALCOMPPOINTS":"0","TOTALDEPOSITS":"9","TOTALWITHDRAWALS":"0","TRACKINGID":false,"VIPLEVEL":"3","WANTMAIL":1,"WORKPHONE":"112","ZIP":"NA"}}</p>
+					</section>
+					<hr>
+					<section id="troubleshoot">
+						<h2>Troubleshoot</h2>
+					<h3>Error Response</h3>
+					<table class="edoc-table">
+						<tr>
+							<th>Field</th>
+							<th>Type</th>
+							<th>Value</th>
+							<th>Description</th>
+							<th>Mandatory</th>
+						</tr>
+						<tr>
+							<td>error</td>
+							<td>string</td>
+							<td>—</td>
+							<td>Error message</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>errorcode</td>
+							<td>integer</td>
+							<td>—</td>
+							<td>Error code</td>
+							<td>1</td>
+						</tr>
+					</table>
+					<hr>
+					<h3>Description of Errors</h3>
+					<table class="edoc-table">
+						<tr>
+							<th>Error code</th>
+							<th>Error message</th>
+						</tr>
+						<tr>
+                            <td>10</td>
+                            <td>Playername not specified</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Casino name not specified</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>Player does not exist</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>Player is not allowed for the Entity</td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td>Could not load player data. Error: 'UMS API return error on access request attempt'</td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td>Could not load player data. Error: 'Service error accessing UMS API'</td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td>Could not load player data from database. Error: 'Database error occured, please contact support'. Please, try again later</td>
+                        </tr>
+					</table>
+					<h3>Example</h3>
+					<p><mark>Request: </mark><br>baseURI/player/info/playername/ZELTESTERR</p>
+					<p><mark>Response: </mark><br>{"error":"Player does not exist","errorcode":41}</p>
+					</section>
+				</div>
+				<div class="bottom-nav">
+					<hr>
+					<br>
+					<a href="#" class="bottom-button"><i class="fa fa-chevron-left left-nav"></i>Previous Chapter</a>
+					<a href="#" class="bottom-button">Next Chapter<i class="fa fa-chevron-right right-nav"></i></a>	
+				</div>
+			</div>			
+		</div>
+	</div>
+
+	<script src="../../js/index.js"></script>
+	<script src="./js/print.js"></script>
+</body>
+</html>

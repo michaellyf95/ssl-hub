@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, user-scalable=no" />
+	<title>Hub</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="header-1">
+				<div class="main-logo-div">
+					<a class="ssl-logo" href="./index.html"><img src="./img/ssl_white.png" alt="ssl_white.png"></a>
+				</div>
+				<div class="main-links-div">
+					<a href="#" id="logout-link" class="hide"><i class="fa fa-sign-out-alt"></i>LOGOUT</a>
+					<a href="./signin.html" id="login-link"><i class="fa fa-sign-in-alt"></i>LOGIN</a>
+				</div>
+			</div>
+			<div class="header-2">
+				<a href="./vipgamelist.html"><i class="fa fa-crown"></i>VIP</a>
+				<a href="./lobbygamelist.html"><i class="fa fa-list-ul"></i>Game List</a>
+				<a href="./formrequest.html"><i class="fa fa-file-alt"></i>Request Forms</a>
+				<div class="link-dd">
+					<button type="button"><i class="fa fa-book-open"></i>E-Document<i class="fa fa-caret-down link-dd-i"></i></button>
+					<div class="link-dd-content">
+						<a href="./edocs/playtech/lobbyedoc.html">Playtech E-Document</a>
+						<a href="./edocs/skywind/lobbyedoc.html">Skywind E-Document</a>
+						<a href="./edocs/gamzo/lobbyedoc.html">Gamzo E-Document</a>
+					</div>
+				</div>
+				<div class="searchbar-div">
+					<div class="searchbar-input">
+						<i class="fa fa-search"></i>
+						<input id="searchbar" type="search" placeholder="search...">
+					</div>
+					<div class="search-dd">
+						<div id="search-list" class="dd-content">
+							<a id="result-1" href="#">Customreport Management</a>
+							<a id="result-2" href="#">Get All Reports</a>
+							<a id="result-3" href="#">Integrate Reports</a>
+							<a id="dd-all-result" class="dd-see-more" href="./searchhub.html">More Results</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+				
+		<div class="wrapper-content">
+			<div class="content">
+                <div class="content-title">
+					<h5>/ All Results</h5>
+					<h1 id="search-text">Get Report</h1>		
+				</div>
+                <hr>
+				<ul id="result-list" class="search-ul">
+                    <!-- <li><a href="docs1.html#overview"><span class="result-li">Get All Reports</span><span class="dir-li">/ CustomReport Management / Get All Reports / Overview</span></a></li> -->
+                </ul>
+				<hr>
+				<div class="load-more-div">
+					<button type="button" id="load-more-btn" class="cta-button">Load More</button>
+					<span>Showing 
+						<span id="result-count"></span> of 
+						<span id="result-total"></span> results     
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/index.js"></script>
+</body>
+</html>

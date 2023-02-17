@@ -1,0 +1,2319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, user-scalable=no" />
+	<title>Hub</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="header-1">
+				<div class="main-logo-div">
+					<a class="ssl-logo" href="./index.html"><img src="./img/ssl_white.png" alt="ssl_white.png"></a>
+				</div>
+				<div class="main-links-div">
+					<a href="#" id="logout-link" class="hide"><i class="fa fa-sign-out-alt"></i>LOGOUT</a>
+					<a href="./signin.html" id="login-link"><i class="fa fa-sign-in-alt"></i>LOGIN</a>
+				</div>
+			</div>
+			<div class="header-2">
+				<a class="current" href="./vipgamelist.html"><i class="fa fa-crown"></i>VIP</a>
+				<a href="./lobbygamelist.html"><i class="fa fa-list-ul"></i>Game List</a>
+				<a href="./formrequest.html"><i class="fa fa-file-alt"></i>Request Forms</a>
+				<div class="link-dd">
+					<button type="button"><i class="fa fa-book-open"></i>E-Document<i class="fa fa-caret-down link-dd-i"></i></button>
+					<div class="link-dd-content">
+						<a href="./edocs/playtech/lobbyedoc.html">Playtech E-Document</a>
+						<a href="./edocs/skywind/lobbyedoc.html">Skywind E-Document</a>
+						<a href="./edocs/gamzo/lobbyedoc.html">Gamzo E-Document</a>
+					</div>
+				</div>
+				<div class="searchbar-div">
+					<div class="searchbar-input">
+						<i class="fa fa-search"></i>
+						<input id="searchbar" type="search" placeholder="search...">
+					</div>
+					<div class="search-dd">
+						<div id="search-list" class="dd-content">
+							<a id="result-1" href="#">Customreport Management</a>
+							<a id="result-2" href="#">Get All Reports</a>
+							<a id="result-3" href="#">Integrate Reports</a>
+							<a id="dd-all-result" class="dd-see-more" href="./searchhub.html">More Results</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="hub-gamedetails-overlay">
+			<div class="hub-gamedetails-container">
+				<div class="hub-gamedetails-close-div">
+					<button type="button" onclick="closeGameDetails()" class="hub-gamedetails-close"><i class="fa fa-times"></i></button>
+				</div>
+				<div class="hub-gamedetails-content">
+					<div class="gamedetails-title-content">
+						<img id="details_gameimg" src="./img/game_samples/game_3.png" alt="">
+						<div class="gamedetails-title-info">
+							<h3 id="details_gamename">Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot (Jane Jones Special Edition)</h3>
+							<table>
+								<tr>
+									<th width="50px">Group:</th>
+									<td id="details_group">Roulette Games</td>
+								</tr>
+								<tr>
+									<th>Type:</th>
+									<td id="details_type">Table Games</td>
+								</tr>
+							</table>
+						</div>
+						<div id="details_platforms" class="gamedetails-title-platforms">
+							<img src="./img/html5_icon.svg" alt="html5_icon.svg">
+							<img src="./img/flash_icon.svg" alt="flash_icon.svg">
+						</div>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Bonus:</th>
+								<td id="details_bonus">NO</td>
+							</tr>
+							<tr>
+								<th>Free Games:</th>
+								<td id="details_freegames">YES</td>
+							</tr>
+							<tr>
+								<th>Cluster Bet Record:</th>
+								<td id="details_cbetrecord">NO</td>
+							</tr>
+							<tr>
+								<th>Branded:</th>
+								<td id="details_branded">YES</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Promotional:</th>
+								<th width="200">Manual Free Spin:</th>
+								<td id="details_manualfreespin">YES</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Golden Chips:</th>
+								<td id="details_goldenchips">NO</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Progressive:</th>
+								<th width="200">Supportive:</th>
+								<td id="details_supportive">YES</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Game Code:</th>
+								<td id="details_gamecode">Skywind — gpas_bokings2pp_pop</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Seed Amount:</th>
+								<td id="details_seedamount">TBD</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th>Contribution %:</th>
+								<td id="details_contribution">1.05%</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Game Reels:</th>
+								<td id="details_gamereels">5</td>
+							</tr>
+							<tr>
+								<th>Game Lines:</th>
+								<td id="details_gamelines">324/117649</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">RTP:</th>
+								<td id="details_rtp">97.22%; Main Bets 1: 95.34-95.34%; Main Bets 2: 95.51-95.51%; Main Bets 5: 91.22-91.24%; Main Bets 10: 96.55-96.58%; Main Bets 20: 92.67-92.74%; Main Bets 40: 90.67-90.81%; Side Bets: Odd: 97.22-97.22%; Even:  91.67-91.67%; Multiple: 96.30-96.30%</td>
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="gamedetails-info-content">
+						<table>
+							<tr>
+								<th width="200">Seed Amount:</th>
+								<th width="200">Type:</th>
+								<td id="details_seedtype">ashbob</td>
+							</tr>
+							<tr>
+								<th></th>
+								<th>Seed:</th>
+								<td id="details_seed">&#8364;20,000.00</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="wrapper-vip-content">
+
+			<div class="vip-utility">
+				<div class="vip-category-div">
+					<div id="rng-button" class="vip-category-btn active" onclick="clickedVipCategory('rng')">RNG</div>
+					<div id="pop-button" class="vip-category-btn" onclick="clickedVipCategory('pop')">POP</div>
+					<div id="live-button" class="vip-category-btn" onclick="clickedVipCategory('live')">LIVE</div>
+				</div>
+				<div class="vip-search-div">
+					<div class="vip-search-input">
+						<i class="fa fa-gamepad"></i>
+						<input id="vip_game_name" type="search" placeholder="game name or code...">
+					</div>
+					<div class="vip-search-input">
+						<i class="fa fa-list-ol"></i>
+						<input id="vip_number" type="number" min="1" placeholder="vip number...">
+					</div>
+				</div>
+			</div>
+
+			<div class="vip-content">
+
+				<div>
+					<div class="vip-rng-div active">
+						<div>
+							<table>
+
+								<thead>
+								  <tr>
+									<th>Game Name</th>
+									<th>Bet Type</th>
+									<th></th>
+									<th class="rng-thead">1</th>
+									<th class="rng-thead">2</th>
+									<th class="rng-thead">3</th>
+									<th class="rng-thead">4</th>
+									<th class="rng-thead">5</th>
+									<th class="rng-thead">6</th>
+									<th class="rng-thead">7</th>
+									<th class="rng-thead">8</th>
+									<th class="rng-thead">9</th>
+									<th class="rng-thead">10</th>
+									<th class="rng-thead">11</th>
+									<th class="rng-thead">12</th>
+									<th class="rng-thead">13</th>
+									<th class="rng-thead">14</th>
+									<th class="rng-thead">15</th>
+									<th class="rng-thead">16</th>
+									<th class="rng-thead">17</th>
+									<th class="rng-thead">18</th>
+									<th class="rng-thead">19</th>
+									<th class="rng-thead">20</th>
+									<th class="rng-thead">21</th>
+									<th class="rng-thead">22</th>
+									<th class="rng-thead">23</th>
+									<th class="rng-thead">24</th>
+									<th class="rng-thead">25</th>
+									<th class="rng-thead">26</th>
+									<th class="rng-thead">27</th>
+									<th class="rng-thead">28</th>
+									<th class="rng-thead">29</th>
+									<th class="rng-thead">30</th>
+									<th class="rng-thead">31</th>
+									<th class="rng-thead">32</th>
+									<th class="rng-thead">33</th>
+									<th class="rng-thead">34</th>
+									<th class="rng-thead">35</th>
+									<th class="rng-thead">36</th>
+									<th class="rng-thead">37</th>
+									<th class="rng-thead">38</th>
+									<th class="rng-thead">39</th>
+									<th class="rng-thead">40</th>
+									<th class="rng-thead">41</th>
+									<th class="rng-thead">42</th>
+									<th class="rng-thead">43</th>
+									<th class="rng-thead">44</th>
+									<th class="rng-thead">45</th>
+									<th class="rng-thead">46</th>
+								  </tr>
+								</thead>
+
+								<tbody>
+									<tr>
+									  <th class="th-first rng-tbody">
+										  The Three Musketeers and The Queen's Diamond&#8482; (tmqd)
+										  <div class="vip-actions">
+											<button type="button" id="vip_rng_1" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										  </div>
+									  </th>
+									  <th class="th-second">Player/Banker</th>
+									  <th class="th-third">Double-up limit</th>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									  <td>10,20,50,250,500,1000,2000,5000,10000,20000,50000,75000,100000</td>
+									</tr>
+								</tbody>
+
+								<tbody>
+									  <tr>
+										  <th class="th-first rng-tbody" rowspan="7">
+											Adventures in Wonderland (ashadv)
+											<div class="vip-actions">
+											  <button type="button" id="vip_rng_2" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											  <button type="button"><i class="fa fa-gamepad"></i></button>
+											  <button type="button"><i class="fa fa-download"></i></button>
+											</div>
+										  </th>
+										  <th class="th-second" rowspan="2">Tie</th>
+										  <th class="th-third">Min</th>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+										  <td>2500</td>
+									  </tr>
+									  <tr>
+										  <th class="th-third">Max</th>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+										  <td>2.5</td>
+									  </tr>
+  
+									  <tr>
+										  <th class="th-second" rowspan="2">Perfect Pair</th>
+										  <th class="th-third">Min</th>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+										  <td>1</td>
+									  </tr>
+									  <tr>
+										  <th class="th-third">Max</th>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+									  </tr>
+  
+									  <tr>
+										  <th class="th-second" rowspan="2">50/50</th>
+										  <th class="th-third">Min Win</th>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+									  </tr>
+									  <tr>
+										  <th class="th-third">Max Win</th>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+									  </tr>
+  
+									  <tr>
+										  <th class="th-second"></th>
+										  <th class="th-third">Coins</th>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+										  <td>1,2,5,25,50,100,200,500,1000,2000,5000,7500,10000</td>
+									  </tr>
+								</tbody>
+
+								<tbody>
+									  <tr>
+										  <th class="th-first rng-tbody" rowspan="5">
+											Atlantis Queen (gtsatq)
+											<div class="vip-actions">
+											  <button type="button" id="vip_rng_3" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											  <button type="button"><i class="fa fa-gamepad"></i></button>
+											  <button type="button"><i class="fa fa-download"></i></button>
+											</div>
+										  </th>
+										  <th class="th-second"></th>
+										  <th class="th-third">Min</th>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+										  <td>0.01</td>
+									  </tr>
+  
+									  <tr>
+										  <th class="th-second"></th>
+										  <th class="th-third">Max</th>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+										  <td>10000</td>
+									  </tr>
+  
+									  <tr>
+										  <th class="th-second"></th>
+										  <th class="th-third">Min Win</th>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+										  <td>0</td>
+									  </tr>
+  
+									  <tr>
+										  <th class="th-second"></th>
+										  <th class="th-third">Max Win</th>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+										  <td>80000000</td>
+									  </tr>
+  
+									  <tr>
+										  <th class="th-second"></th>
+										  <th class="th-third">Coins</th>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+										  <td>1,2,5,40,80,160,800</td>
+									  </tr>
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+
+					<div class="vip-pop-div">
+						<div>
+							<table>
+
+								<thead>
+								  <tr>
+									<th>Game Name</th>
+									<th>Game Code</th>
+									<th class="pop-thead">1</th>
+									<th class="pop-thead">2</th>
+									<th class="pop-thead">3</th>
+									<th class="pop-thead">4</th>
+									<th class="pop-thead">5</th>
+									<th class="pop-thead">6</th>
+									<th class="pop-thead">7</th>
+									<th class="pop-thead">8</th>
+									<th class="pop-thead">9</th>
+									<th class="pop-thead">10</th>
+									<th class="pop-thead">11</th>
+									<th class="pop-thead">12</th>
+									<th class="pop-thead">13</th>
+									<th class="pop-thead">14</th>
+									<th class="pop-thead">15</th>
+									<th class="pop-thead">16</th>
+									<th class="pop-thead">17</th>
+									<th class="pop-thead">18</th>
+									<th class="pop-thead">19</th>
+									<th class="pop-thead">20</th>
+									<th class="pop-thead">21</th>
+									<th class="pop-thead">22</th>
+									<th class="pop-thead">23</th>
+									<th class="pop-thead">24</th>
+									<th class="pop-thead">25</th>
+									<th class="pop-thead">26</th>
+									<th class="pop-thead">27</th>
+									<th class="pop-thead">28</th>
+									<th class="pop-thead">29</th>
+									<th class="pop-thead">30</th>
+									<th class="pop-thead">31</th>
+									<th class="pop-thead">32</th>
+									<th class="pop-thead">33</th>
+									<th class="pop-thead">34</th>
+									<th class="pop-thead">35</th>
+									<th class="pop-thead">36</th>
+									<th class="pop-thead">37</th>
+									<th class="pop-thead">38</th>
+									<th class="pop-thead">39</th>
+									<th class="pop-thead">40</th>
+									<th class="pop-thead">41</th>
+									<th class="pop-thead">42</th>
+									<th class="pop-thead">43</th>
+									<th class="pop-thead">44</th>
+									<th class="pop-thead">45</th>
+									<th class="pop-thead">46</th>
+									<th class="pop-thead">47</th>
+									<th class="pop-thead">48</th>
+									<th class="pop-thead">49</th>
+								  </tr>
+								</thead>
+
+								<tbody>
+								  <tr>
+									<th class="pop-tbody">
+										Jane Jones - Book of Kings 2&#8482; PowerPlay Jackpot
+										<div class="vip-actions">
+											<button type="button" id="vip_pop_1" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									</th class="pop-tbody">
+									<th>gpas_bokings2pp_pop</th>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+								  </tr>
+								</tbody>
+
+								<tbody>
+								  <tr>
+									<th class="pop-tbody">
+										Age of the Gods Norse: Book of Dwarves
+										<div class="vip-actions">
+											<button type="button" id="vip_pop_2" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									</th>
+									<th class="pop-tbody">gpas_gogold_pop</th>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+								  </tr>
+								</tbody>
+
+								<tbody>
+								  <tr>
+									<th class="pop-tbody">
+										Clover Rollover 2
+										<div class="vip-actions">
+											<button type="button" id="vip_pop_3" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									</th>
+									<th class="pop-tbody">gpas_bprog_pop</th>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									<td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+								  </tr>
+								</tbody>
+
+								<tbody>
+								  <tr>
+									<th class="pop-tbody">
+										Age of the Gods Norse: Thor Wrath
+										<div class="vip-actions">
+											<button type="button" id="vip_pop_4" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									</th>
+									<th class="pop-tbody">gpas_gogold_pop</th>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+								  </tr>
+								</tbody>
+
+								<tbody>
+									<tr>
+									  <th class="pop-tbody">
+										  Age of the Gods Norse: Gods and Giants&#8482;
+										  <div class="vip-actions">
+											<button type="button" id="vip_pop_5" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									  </th>
+									  <th class="pop-tbody">gpas_bokings2pp_pop</th>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									</tr>
+								</tbody>
+  
+								<tbody>
+									<tr>
+									  <th class="pop-tbody">
+										  Legacy of the Wild 2
+										  <div class="vip-actions">
+											<button type="button" id="vip_pop_6" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									  </th>
+									  <th class="pop-tbody">gpas_gogold_pop</th>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									  <td>10, 20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1250, 1500, 2000, 2500, 3000, 5000, 7500, 10000, 15000, 20000</td>
+									</tr>
+								</tbody>  
+  
+								<tbody>
+									<tr>
+									  <th class="pop-tbody">
+										  Beat The Bobbies
+										  <div class="vip-actions">
+											<button type="button" id="vip_pop_7" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									  </th>
+									  <th class="pop-tbody">gpas_bprog_pop</th>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									  <td>0.02, 5, 10, 50, 60, 70, 80, 100</td>
+									</tr>
+								</tbody>  
+
+							</table>
+						</div>
+					</div>
+	
+					<div class="vip-live-div">
+
+						<div>
+							<table>
+
+								<thead>
+								  <tr>
+									<th>Game Name</th>
+									<th>Bet Type</th>
+									<th class="live-thead">1</th>
+									<th class="live-thead">2</th>
+									<th class="live-thead">3</th>
+									<th class="live-thead">4</th>
+									<th class="live-thead">5</th>
+									<th class="live-thead">6</th>
+									<th class="live-thead">7</th>
+									<th class="live-thead">8</th>
+									<th class="live-thead">9</th>
+									<th class="live-thead">10</th>
+									<th class="live-thead">11</th>
+									<th class="live-thead">12</th>
+									<th class="live-thead">13</th>
+									<th class="live-thead">14</th>
+									<th class="live-thead">15</th>
+									<th class="live-thead">16</th>
+									<th class="live-thead">17</th>
+									<th class="live-thead">18</th>
+									<th class="live-thead">19</th>
+									<th class="live-thead">20</th>
+									<th class="live-thead">21</th>
+									<th class="live-thead">22</th>
+									<th class="live-thead">23</th>
+									<th class="live-thead">24</th>
+									<th class="live-thead">25</th>
+									<th class="live-thead">26</th>
+									<th class="live-thead">27</th>
+									<th class="live-thead">28</th>
+									<th class="live-thead">29</th>
+									<th class="live-thead">30</th>
+									<th class="live-thead">31</th>
+									<th class="live-thead">32</th>
+									<th class="live-thead">33</th>
+									<th class="live-thead">34</th>
+									<th class="live-thead">35</th>
+									<th class="live-thead">36</th>
+									<th class="live-thead">37</th>
+									<th class="live-thead">38</th>
+									<th class="live-thead">39</th>
+									<th class="live-thead">40</th>
+									<th class="live-thead">41</th>
+									<th class="live-thead">42</th>
+									<th class="live-thead">43</th>
+									<th class="live-thead">44</th>
+									<th class="live-thead">45</th>
+									<th class="live-thead">46</th>
+									<th class="live-thead">47</th>
+									<th class="live-thead">48</th>
+									<th class="live-thead">49</th>
+									<th class="live-thead">50</th>
+									<th class="live-thead">51</th>
+									<th class="live-thead">52</th>
+									<th class="live-thead">53</th>
+								  </tr>
+								</thead>
+
+								<tbody>
+								  <tr>
+									<th class="th-first live-tbody">
+										God of Storms Live Slots (gosl)
+										<div class="vip-actions">
+											<button type="button" id="vip_live_1" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									</th>
+									<th class="th-second">SLOTS_SPIN</th>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									<td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+								  </tr>
+								</tbody>
+
+								<tbody>
+								  <tr>
+									<th class="th-first live-tbody" rowspan="4">
+										Casino Stud Poker (cspljpt)
+										<div class="vip-actions">
+											<button type="button" id="vip_live_2" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									</th>
+									<th class="th-second">Ante</th>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+									<td>10 - 1000</td>
+								  </tr>
+								  <tr>
+									<th class="th-second">Column / Dozen</th>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+									<td>8 - 400</td>
+								  </tr>
+								  <tr>
+									<th class="th-second">Buster Blackjack</th>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+									<td>2.5 - 50</td>
+								  </tr>
+								  <tr>
+									<th class="th-second">Bet Behind TOP 3 bet</th>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+									<td>10 - 100000</td>
+								  </tr>
+								</tbody>
+
+								<tbody>
+								  <tr>
+									<th class="th-first live-tbody" rowspan="4">
+										Betslip Dragon Tiger (dtl) Bet On Dragon Tiger
+										<div class="vip-actions">
+											<button type="button" id="vip_live_3" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									</th>
+									<th class="th-second">Player/Banker Pair</th>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+									<td>5 - 400000</td>
+								  </tr>
+								  <tr>
+									<th class="th-second">Bet Behind ANTE bet</th>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+									<td>0.4 - 8</td>
+								  </tr>
+								  <tr>
+									<th class="th-second">BlackJack 21+3</th>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+									<td>10, 20, 30, 40, 50, 60, 80, 100, 150, 200, 250, 300, 400, 500, 800, 1000, 1500, 2000, 5000, 10000, 15000, 20000, 30000, 50000, 70000, 100000</td>
+								  </tr>
+								</tbody>
+
+								<tbody>
+									<tr>
+									  <th class="th-first live-tbody">
+										  Unlimited Blackjack (ubjl)
+										  <div class="vip-actions">
+											<button type="button" id="vip_live_4" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									  </th>
+									  <th class="th-second">SLOTS_SPIN</th>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									  <td>100,200,500,1000,2000,3000,4000,5000,10000,15000</td>
+									</tr>
+								</tbody>
+
+								<tbody>
+									<tr>
+									  <th class="th-first live-tbody" rowspan="4">
+										  Sicbo Deluxe (sbdl)
+										  <div class="vip-actions">
+											<button type="button" id="vip_live_5" onclick="clickedGameDetails(this.id)"><i class="fa fa-info-circle"></i></button>
+											<button type="button"><i class="fa fa-gamepad"></i></button>
+											<button type="button"><i class="fa fa-download"></i></button>
+										</div>
+									  </th>
+									  <th class="th-second">Ante</th>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									  <td>10 - 1000</td>
+									</tr>
+									<tr>
+									  <th class="th-second">Column / Dozen</th>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									  <td>8 - 400</td>
+									</tr>
+									<tr>
+									  <th class="th-second">Buster Blackjack</th>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									  <td>2.5 - 50</td>
+									</tr>
+									<tr>
+									  <th class="th-second">Bet Behind TOP 3 bet</th>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									  <td>10 - 100000</td>
+									</tr>
+								</tbody>
+
+							</table>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+    </div>
+
+	<script src="./js/index.js"></script>
+	<script src="./js/vip.js"></script>
+</body>
+</html>

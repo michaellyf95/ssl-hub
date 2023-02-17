@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Skywind E-Doc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, user-scalable=no" />
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="../../css/all.min.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header>
+			<div class="header-1">
+				<div class="main-logo-div">
+					<a class="ssl-logo" href="../../index.html"><img src="../../img/ssl_white.png" alt="ssl_white.png"></a>
+				</div>
+				<div class="main-links-div">
+					<a href="#" id="logout-link" class="hide"><i class="fa fa-sign-out-alt"></i>LOGOUT</a>
+					<a href="../../signin.html" id="login-link"><i class="fa fa-sign-in-alt"></i>LOGIN</a>
+				</div>
+			</div>
+			<div class="header-2">
+				<a href="../../vipgamelist.html"><i class="fa fa-crown"></i>VIP</a>
+				<a href="../../lobbygamelist.html"><i class="fa fa-list-ul"></i>Game List</a>
+				<a href="../../formrequest.html"><i class="fa fa-file-alt"></i>Request Forms</a>
+				<div class="link-dd">
+					<button type="button" class="current"><i class="fa fa-book-open"></i>E-Document<i class="fa fa-caret-down link-dd-i"></i></button>
+					<div class="link-dd-content">
+						<a href="../playtech/lobbyedoc.html">Playtech E-Document</a>
+						<a class="dd-current" href="../skywind/lobbyedoc.html">Skywind E-Document</a>
+						<a href="../gamzo/lobbyedoc.html">Gamzo E-Document</a>
+					</div>
+				</div>
+				<div class="searchbar-div">
+					<div class="searchbar-input">
+						<i class="fa fa-search"></i>
+						<input id="searchbar" type="search" placeholder="search...">
+					</div>
+					<div class="search-dd">
+						<div id="search-list" class="dd-content">
+							<a id="result-1" href="#">Customreport Management</a>
+							<a id="result-2" href="#">Get All Reports</a>
+							<a id="result-3" href="#">Integrate Reports</a>
+							<a id="dd-all-result" class="dd-see-more" href="../../searchhub.html">More Results</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<aside class="edoc-sidenav">
+			<div class="edoc-sideico-div">
+				<div class="edoc-sideico">
+					<img src="./img/skywind_logo.svg">
+					<i class="fa fa-arrow-right"></i>
+				</div>
+			</div>
+			<div class="edoc-sideul-div">
+				<ul class="edoc-sideul">
+					<li id="side-list-1"><div class="edoc-sidenav-caret"><span>Admin Management</span><i class="fa fa-exclamation-circle"></i></div>
+						<ul class="edoc-sidenav-nested">
+							<li id="side-list-1-1"><div class="edoc-sidenav-subcaret"><span>Create Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>		
+							<li id="side-list-1-2"><div class="edoc-sidenav-subcaret"><span>Delete Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-3"><div class="edoc-sidenav-subcaret"><span>Edit Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-4"><div class="edoc-sidenav-subcaret"><span>Blacklist Admin</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-5"><div class="edoc-sidenav-subcaret"><span>Get Admin Info</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>	
+							<li id="side-list-1-6"><div class="edoc-sidenav-subcaret"><span>Get All Admins</span><i class="fa fa-exclamation-circle"></i></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs1.html">Overview</a></li>
+									<li><a href="docs1.html#integration">Integration</a></li>
+									<li><a href="docs1.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>		 
+						</ul>
+					</li> 
+					<li id="side-list-2"><div class="edoc-sidenav-caret"><span>Player Management</span></div>
+						<ul class="edoc-sidenav-nested">
+							<li id="side-list-2-1"><div class="edoc-sidenav-subcaret"><span>Get Player Info</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-2"><div class="edoc-sidenav-subcaret"><span>Get All Players</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-3"><div class="edoc-sidenav-subcaret"><span>Delete Player</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-4"><div class="edoc-sidenav-subcaret"><span>Blacklist Player</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			 
+							<li id="side-list-2-5"><div class="edoc-sidenav-subcaret"><span>Edit Player Info</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>			
+							<li id="side-list-2-6"><div class="edoc-sidenav-subcaret"><span>Create Player</span></div>
+								<ul class="edoc-sidenav-nested edoc-sidenav-subli">
+									<li><a href="docs2.html">Overview</a></li>
+									<li><a href="docs2.html#integration">Integration</a></li>
+									<li><a href="docs2.html#troubleshoot">Troubleshoot</a></li>
+								</ul>
+							</li>					
+						</ul>
+					</li> 
+				</ul>	
+			</div>
+		</aside>
+
+		<div class="btt-btn">
+			<a href="#top"><img src="./img/skywind_icon.svg"></a>
+		</div>
+
+		<div class="wrapper-content-sidenavhover">
+			<div class="content">
+				<div class="content-title">
+					<h5>/ Admin Management / Create Admin</h5>
+					<h1>Create Admin <span class="methods">POST</span> <span>- [V1.16] - 12/12/2021</span></h1>		
+					<button type="button" class="edoc-printbtn" onclick="printDiv()"><i class="fa fa-print"></i></button>
+				</div>
+				<div class="alert-board">
+					<h4>Updates - [V1.4] - 30-08-2022</h4>
+					<ul>
+						<li>Fixes for Functions</li>
+						<li>Updated UI</li>
+						<li>Added Localization</li>
+					</ul>
+					<div>
+						<a href="./changelog.html#api_1">Read More<i class="fa fa-external-link-alt"></i></a>
+					</div>
+				</div>
+				<hr>
+				<div>
+					<section id="overview">
+						<h2>Overview</h2>
+						<h3>Description</h3>
+						<p>To create a <mark>new admin</mark> under the specific business entity.</p>
+						<hr>
+						<h3>URI</h3>
+						<p>baseURI/admin/create/</p>
+					</section>
+					<hr>
+					<section id="integration">
+						<h2>Integration</h2>
+					<h3>Input Post Params</h3>
+					<table class="edoc-table">
+						<tr>
+							<th width="120">Parameter name</th>
+							<th width="40">Type</th>
+							<th width="150">Comments</th>
+							<th width="80">Mandatory</th>
+							<th width="50">Value</th>
+							<th width="80">Minlength</th>
+							<th width="80">Maxlength</th>
+							<th width="80">REGEX</th>
+						</tr>
+						<tr>
+							<td>adminname</td>
+							<td>string</td>
+							<td>Admin name</td>
+							<td>1</td>
+							<td>—</td>
+							<td>1</td>
+							<td>100</td>
+							<td>/[A-Za-z0-9]+/</td>
+						</tr>
+						<tr>
+							<td>entityname</td>
+							<td>string</td>
+							<td>Business entity name</td>
+							<td>1</td>
+							<td>—</td>
+							<td>1</td>
+							<td>100</td>
+							<td>/[A-Za-z0-9.\\/,_-]+/</td>
+						</tr>
+						<tr>
+							<td>countrycode</td>
+							<td>string</td>
+							<td>Country code</td>
+							<td>1</td>
+							<td>—</td>
+							<td>2</td>
+							<td>2</td>
+							<td>/[A-Z]+/</td>
+						</tr>
+						<tr>
+							<td>firstname</td>
+							<td>string</td>
+							<td>First name</td>
+							<td>0</td>
+							<td>—</td>
+							<td>1</td>
+							<td>20</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>lastname</td>
+							<td>string</td>
+							<td>Last name</td>
+							<td>0</td>
+							<td>—</td>
+							<td>1</td>
+							<td>20</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>languagecode</td>
+							<td>string</td>
+							<td>Language code</td>
+							<td>0</td>
+							<td>—</td>
+							<td>2</td>
+							<td>5</td>
+							<td>/[A-Z-]+/</td>
+						</tr>
+						<tr>
+							<td>city</td>
+							<td>string</td>
+							<td>City</td>
+							<td>0</td>
+							<td>—</td>
+							<td>2</td>
+							<td>20</td>
+							<td>/[A-Za-z-]+/</td>
+						</tr>
+						<tr>
+							<td>address</td>
+							<td>string</td>
+							<td>Address</td>
+							<td>0</td>
+							<td>—</td>
+							<td>2</td>
+							<td>100</td>
+							<td>/[A-Za-z0-9./,-\s]+/</td>
+						</tr>
+						<tr>
+							<td>phone</td>
+							<td>string</td>
+							<td>Phone</td>
+							<td>0</td>
+							<td>—</td>
+							<td>4</td>
+							<td>20</td>
+							<td>/[0-9].*[0-9].*[0-9].*[0-9]/</td>
+						</tr>
+						<tr>
+							<td>email</td>
+							<td>string</td>
+							<td>Email</td>
+							<td>0</td>
+							<td>—</td>
+							<td>2</td>
+							<td>20</td>
+							<td>/([A-Za-z0-9-.]+)@((?:[A-Za-z0-9]+.)+)([a-zA-Z]{2,4})/</td>
+						</tr>
+						<tr>
+							<td>state</td>
+							<td>string</td>
+							<td>State</td>
+							<td>0</td>
+							<td>—</td>
+							<td>1</td>
+							<td>40</td>
+							<td>/[A-Za-z0-9]+/</td>
+						</tr>
+						<tr>
+							<td>zip</td>
+							<td>string</td>
+							<td>Zip code</td>
+							<td>0</td>
+							<td>—</td>
+							<td>2</td>
+							<td>10</td>
+							<td>/[A-Za-z0-9-_]+/</td>
+						</tr>
+						<tr>
+							<td>mobile</td>
+							<td>string</td>
+							<td>Mobile</td>
+							<td>0</td>
+							<td>—</td>
+							<td>4</td>
+							<td>20</td>
+							<td>/[0-9].*[0-9].*[0-9].*[0-9]/</td>
+						</tr>
+						<tr>
+							<td>fax</td>
+							<td>string</td>
+							<td>Fax</td>
+							<td>0</td>
+							<td>—</td>
+							<td>—</td>
+							<td>20</td>
+							<td>/[A-Za-z0-9.+-]+/</td>
+						</tr>
+						<tr>
+							<td>deposit_limit</td>
+							<td>integer</td>
+							<td>Deposit limit. Default value is 0.</td>
+							<td>0</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>bonus_limit</td>
+							<td>integer</td>
+							<td>Bonus limit. Default value is 0.</td>
+							<td>0</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>deposit_limit_timeperiod</td>
+							<td>integer</td>
+							<td>Deposit limit period. Default value is 24.</td>
+							<td>0</td>
+							<td>Min:0|Max:72</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>bonus_limit_timeperiod</td>
+							<td>integer</td>
+							<td>Bonus limit period. Default value is 24.</td>
+							<td>0</td>
+							<td>Min:0|Max:72</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>is_deposit_owner</td>
+							<td>integer</td>
+							<td>Is deposit owner</td>
+							<td>0</td>
+							<td>0|1</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^0|1$/</td>
+						</tr>
+						<tr>
+							<td>is_bonus_owner</td>
+							<td>integer</td>
+							<td>Is bonus owner</td>
+							<td>0</td>
+							<td>0|1</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^0|1$/</td>
+						</tr>
+						<tr>
+							<td>frozen</td>
+							<td>integer</td>
+							<td>Frozen</td>
+							<td>0</td>
+							<td>0|1</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^0|1$/</td>
+						</tr>
+						<tr>
+							<td>password</td>
+							<td>string</td>
+							<td>Password</td>
+							<td>1</td>
+							<td>Abc123</td>
+							<td>6</td>
+							<td>40</td>
+							<td>/[A-Za-z0-9.+-]+/</td>
+						</tr>
+						<tr>
+							<td>depositbalance_operation</td>
+							<td>string</td>
+							<td>Deposit operation</td>
+							<td>0</td>
+							<td>increase|decrease</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>depositbalance_amount</td>
+							<td>float</td>
+							<td>Deposit balance amount</td>
+							<td>0</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^[0-9]+[.|,]*[0-9]+$/</td>
+						</tr>
+						<tr>
+							<td>bonusbalance_operation</td>
+							<td>string</td>
+							<td>Bonus operation</td>
+							<td>0</td>
+							<td>increase|decrease</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>bonusbalance_amount</td>
+							<td>float</td>
+							<td>Bonus balance amount</td>
+							<td>0</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^[0-9]+[.|,]*[0-9]+$/</td>
+						</tr>
+						<tr>
+							<td>is_simple_interface</td>
+							<td>integer</td>
+							<td>Is simple admin</td>
+							<td>0</td>
+							<td>0|1</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^0|1$/</td>
+						</tr>
+						<tr>
+							<td>change_password_on_login</td>
+							<td>integer</td>
+							<td>Should password be changed on login</td>
+							<td>0</td>
+							<td>0|1</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^0|1$/</td>
+						</tr>
+						<tr>
+							<td>fromadminname</td>
+							<td>string</td>
+							<td>Admin name from which deposit balance or bonus balance will be taken</td>
+							<td>0</td>
+							<td>—</td>
+							<td>1</td>
+							<td>100</td>
+							<td>/[A-Za-z0-9]+/</td>
+						</tr>
+						<tr>
+							<td>timeout_timeperiod</td>
+							<td>string</td>
+							<td>Timeout timeperiod</td>
+							<td>0</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>role</td>
+							<td>string</td>
+							<td>Admin permission role</td>
+							<td>0</td>
+							<td>custom</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+						<tr>
+							<td>ipcheck</td>
+							<td>integer</td>
+							<td>Use allowed IP addresses filtering</td>
+							<td>0</td>
+							<td>0|1</td>
+							<td>—</td>
+							<td>—</td>
+							<td>/^0|1$/</td>
+						</tr>
+						<tr>
+							<td>allowedips</td>
+							<td>string</td>
+							<td>List of IPs separatted by semicolon</td>
+							<td>0</td>
+							<td>—</td>
+							<td>1</td>
+							<td>—</td>
+							<td>/^[[:digit:]%_]{1,3}\\.[[:digit:]%_]{1,3}\\.[[:digit:]%_]{1,3}\\.[[:digit:]%_]{1,3}$/</td>
+						</tr>
+						<tr>
+							<td>3RDPContainer</td>
+							<td>json</td>
+							<td>Json encoded array of 3RDP container. A list of attributes that can be set have a range custom01..custom20. Example used the parameter, 3RDPContainer={"custom01":10,"custom02":"custom field value"}</td>
+							<td>0</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+					</table>
+					<hr>
+					<h3>Response Type</h3>
+					<p>application/json</p>
+					<hr>
+					<h3>Success Response</h3>
+					<table class="edoc-table">
+						<tr>
+							<th>Field</th>
+							<th>Type</th>
+							<th>Value</th>
+							<th>Description</th>
+							<th>Mandatory</th>
+						</tr>
+						<tr>
+							<td>result</td>
+							<td>array</td>
+							<td>—</td>
+							<td>The list of fields of the response, see the table below.</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<table style="margin:0px; width:100%;">
+									<tbody>
+										<tr>
+											<th>Field</th>
+											<th>Type</th>
+											<th>Value</th>
+											<th>Description</th>
+											<th>Mandatory</th>
+										</tr>
+										<tr>
+											<td>result</td>
+											<td>string</td>
+											<td>Admin has been successfully created</td>
+											<td>—</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<td>password</td>
+											<td>string</td>
+											<td>skljd23bff</td>
+											<td>Admin password</td>
+											<td>1</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<hr>
+					<h3>Example</h3>
+					<p><mark>Request: </mark><br>baseURI/admin/create/adminname/bez16/entityname/bez/languagecode/en/countrycode/ua/password/111111/role/custom/city/Kyiv/address/Amosova 12/zip/111/phone/11111/mobile/121212/email/ybe@ciklum.com/3RDPContainer/{\"custom01\":10,\"custom01\":\"custom field value\"}/</p>
+					<p><mark>Response: </mark><br>{"result":{"result":"admin has been successfully created","password":"skljd23bff"}}</p>
+					</section>
+					<hr>
+					<section id="troubleshoot">
+						<h2>Troubleshoot</h2>
+					<h3>Error Response</h3>
+					<table class="edoc-table">
+						<tr>
+							<th>Field</th>
+							<th>Type</th>
+							<th>Value</th>
+							<th>Description</th>
+							<th>Mandatory</th>
+						</tr>
+						<tr>
+							<td>error</td>
+							<td>string</td>
+							<td>—</td>
+							<td>Error message</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>errorcode</td>
+							<td>integer</td>
+							<td>—</td>
+							<td>Error code</td>
+							<td>1</td>
+						</tr>
+					</table>
+					<hr>
+					<h3>Description of Errors</h3>
+					<table class="edoc-table">
+						<tr>
+							<th>Error code</th>
+							<th>Error message</th>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Casino name not specified</td>
+						</tr>
+						<tr>
+							<td>29</td>
+							<td>Entered the wrong request format of '3RDPContainer'</td>
+						</tr>
+						<tr>
+							<td>75</td>
+							<td>Attribute 'attribute name' does not exist. Please enter the correct request</td>
+						</tr>
+						<tr>
+							<td>111</td>
+							<td>Business entity name have to be present</td>
+						</tr>
+						<tr>
+							<td>114</td>
+							<td>Business entity not found</td>
+						</tr>
+						<tr>
+							<td>133</td>
+							<td>Admin not found</td>
+						</tr>
+						<tr>
+							<td>135</td>
+							<td>Business entity is not allowed for the Entity #'entity_id'</td>
+						</tr>
+						<tr>
+							<td>140</td>
+							<td>Form validation errors</td>
+						</tr>
+						<tr>
+							<td>141</td>
+							<td>Password have to be present</td>
+						</tr>
+						<tr>
+							<td>142</td>
+							<td>Deposit balance amount not specified</td>
+						</tr>
+						<tr>
+							<td>143</td>
+							<td>Unknown type of deposit balance</td>
+						</tr>
+						<tr>
+							<td>144</td>
+							<td>Internal status of admins does not match</td>
+						</tr>
+						<tr>
+							<td>145</td>
+							<td>You cannot increase/decrease deposit balance, because admin is deposit owner</td>
+						</tr>
+						<tr>
+							<td>146</td>
+							<td>Could not increase deposit balance amount. Technical error.</td>
+						</tr>
+						<tr>
+							<td>147</td>
+							<td>Admin does not have enough balance</td>
+						</tr>
+						<tr>
+							<td>148</td>
+							<td>Admin code is not valid</td>
+						</tr>
+						<tr>
+							<td>149</td>
+							<td>Could not decrease deposit balance amount. Technical error.</td>
+						</tr>
+						<tr>
+							<td>150</td>
+							<td>Admin does not have enough balance</td>
+						</tr>
+						<tr>
+							<td>151</td>
+							<td>Admin is not deposit manager</td>
+						</tr>
+						<tr>
+							<td>152</td>
+							<td>Admin is not child of from admin</td>
+						</tr>
+						<tr>
+							<td>153</td>
+							<td>Bonus balance amount not specified</td>
+						</tr>
+						<tr>
+							<td>154</td>
+							<td>Unknown type of bonus balance</td>
+						</tr>
+						<tr>
+							<td>155</td>
+							<td>You cannot increase/decrease bonus balance, because admin is bonus owner</td>
+						</tr>
+						<tr>
+							<td>156</td>
+							<td>Could not increase bonus balance. Technical error.</td>
+						</tr>
+						<tr>
+							<td>157</td>
+							<td>Admin does not have enough bonus balance</td>
+						</tr>
+						<tr>
+							<td>158</td>
+							<td>Could not decrease bonus balance. Technical error.</td>
+						</tr>
+						<tr>
+							<td>159</td>
+							<td>Can not decrease, bonus balance is 0.</td>
+						</tr>
+						<tr>
+							<td>160</td>
+							<td>Admin is not bonus manager</td>
+						</tr>
+						<tr>
+							<td>161</td>
+							<td>Invalid payment parameters</td>
+						</tr>
+						<tr>
+							<td>177</td>
+							<td>From admin name for set deposit balance not specified</td>
+						</tr>
+						<tr>
+							<td>178</td>
+							<td>From admin name for set bonus balance not specified</td>
+						</tr>
+						<tr>
+							<td>179</td>
+							<td>Setting isdepositowner param is not allowed via API</td>
+						</tr>
+						<tr>
+							<td>180</td>
+							<td>Setting isbonusowner param is not allowed via API</td>
+						</tr>
+						<tr>
+							<td>183</td>
+							<td>Setting internal param is not allowed via API</td>
+						</tr>
+						<tr>
+							<td>184</td>
+							<td>Deposit balance of 'from admin' is frozen</td>
+						</tr>
+						<tr>
+							<td>185</td>
+							<td>Deposit balance of 'to admin' is frozen</td>
+						</tr>
+						<tr>
+							<td>186</td>
+							<td>Bonus balance of 'from admin' is frozen</td>
+						</tr>
+						<tr>
+							<td>187</td>
+							<td>Bonus balance of 'to admin' is frozen</td>
+						</tr>
+						<tr>
+							<td>188</td>
+							<td>From admin for set deposit balance is not found</td>
+						</tr>
+						<tr>
+							<td>189</td>
+							<td>From admin for set bonus balance is not found</td>
+						</tr>
+						<tr>
+							<td>344</td>
+							<td>This entity is frozen</td>
+						</tr>
+					</table>
+					<h3>Example</h3>
+					<p><mark>Request: </mark><br>baseURI/admin/create/adminname/bez16/languagecode/en/countrycode/ua/password/111111/role/custom/city/Kyiv/address/Amosova 12/zip/111/phone/11111/mobile/121212/email/ybe@ciklum.com/3RDPContainer/{"custom01":10,"custom01":"custom field value"}/</p>
+					<p><mark>Response: </mark><br>{"error":"Business entity name have to be present","errorcode":111}</p>
+					</section>
+				</div>
+				<div class="bottom-nav">
+					<hr>
+					<br>
+					<a href="#" class="bottom-button"><i class="fa fa-chevron-left left-nav"></i>Previous Chapter</a>
+					<a href="#" class="bottom-button">Next Chapter<i class="fa fa-chevron-right right-nav"></i></a>	
+				</div>
+			</div>			
+		</div>
+	</div>
+
+	<script src="../../js/index.js"></script>
+	<script src="./js/print.js"></script>
+</body>
+</html>
